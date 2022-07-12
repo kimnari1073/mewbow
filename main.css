@@ -1,0 +1,33 @@
+*{
+    margin: 0px;
+    padding: 0px;
+     }
+/*header*/
+.main_logo{
+    font-size: 80px;
+}
+/*section*/
+
+
+
+/*nav*/
+nav ul li{
+    border: 0px solid white;
+    list-style: none;
+    font-size: 30px;
+    display: inline;
+    width: 10px;
+    margin: 150px;
+}
+/*nav 글씨전용*/
+nav ul li span{
+    position: relative;
+    top: 0px;
+    right: 90px;
+}
+.nav_img{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 50px;
+    display: inline-block;
+}
