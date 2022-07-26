@@ -1,17 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@500&display=swap');
+
 *{
     margin: 0px;
     padding: 0px;
     text-decoration: none;
-    font-family: 'Do Hyeon', sans-serif;
+    font-family: 'IBM Plex Sans KR'; /*폰트 일단 넣었는데 별로면 바꿉시더 --은영*/
+    background-color: #ebebeb; /*배경 넣어봤는데 별로면 바꿉시더 --은영*/
 }
 /*header*/
-.main_logo{
-    font-size: 80px;
-    font-weight: 800;
-}
-.main_servelogo{
+header{
     font-size: 50px;
-    font-weight: 800;
+    font-weight: bold;
+    color: black;
+}
+.main_logo{
+    margin-right: 400px;
+    font-size: 60px;
+    
+}
+.navi{
+    font-size: 35px;
+    word-spacing: 160px;
 }
 /*section*/
 

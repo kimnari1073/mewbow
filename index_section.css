@@ -1,0 +1,16 @@
+.section_text{
+    width: 750px;
+    height: 430px;
+    float: left;
+    position: relative;
+    top: 100px;
+    left: 100px;
+    border:1px solid; 
+}
+.section_img{
+    position: relative;
+    top: 100px; 
+    margin-left: 150px; 
+    width: 445px; 
+    height: 430px;
+}
