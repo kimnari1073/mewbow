@@ -5,13 +5,15 @@
     font-family: 'Do Hyeon', sans-serif;
 }
 /*header*/
-.main_logo{
-    font-size: 80px;
-    font-weight: 800;
-}
-.main_servelogo{
+header{
     font-size: 50px;
     font-weight: 800;
+}
+.main_logo{
+    text-align: left;
+}
+.navi{
+    text-align: right;
 }
 /*section*/
 
