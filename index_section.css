@@ -14,3 +14,14 @@
     width: 445px; 
     height: 430px;
 }
+/*사진 확대가 제자리에서 안됨_신영*/
+.a{
+    overflow: hidden;
+    height:580px;
+}
+.a img{
+    transition: all 0.2s linear;
+}
+.a:hover img{
+    transform: scale(1.2);
+}

@@ -7,20 +7,21 @@
     font-family: 'IBM Plex Sans KR'; /*폰트 일단 넣었는데 별로면 바꿉시더 --은영*/
     background-color: #ebebeb; /*배경 넣어봤는데 별로면 바꿉시더 --은영*/
 }
+a{
+    color: black;
+}
 /*header*/
 header{
     font-size: 50px;
     font-weight: bold;
-    color: black;
 }
 .main_logo{
     margin-right: 400px;
     font-size: 60px;
-    
 }
 .navi{
     font-size: 35px;
-    word-spacing: 160px;
+    word-spacing: 100px;
 }
 /*section*/
 
