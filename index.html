@@ -15,29 +15,25 @@
             text-align: center;
             margin: auto;
         }
-        .box{ /*section의 index_section_menu 부분 스타일(위치조정 때문에 넣음), 이름 뭐로 할지 몰라서 걍 box로 함 -- 은영*/
-            margin-left: 850px;
-            margin-top: -60px;
-        }
     </style>
     
 </head>
 <body>
-    <header> 
+    <header> <!--header부분 수정 필요함. 메인로고는 왼쪽, 네비는 오른쪽에 배치되게끔 하기/나리-->
+        <!--header의 마진값 조정 필요-->
         <span class="main_logo"><a href="index.html">IT의 기원과 세대</a></span>
-        <span class="navi"><a href="origin.html" >기원</a> 
+        <span class="navi"><a href="origin.html" >기원</a> / 
         <a href="generation.html">세대</a></span>
     </header>
-    <br>
     <nav>
         <ul class="nav_ul">
+ 
     </nav>
 
     <section>
         <iframe src="index_section01.html" name="top" width=100% height=600px frameborder="0"></iframe>
-      <div class="box">
-        <iframe src="index_section_menu.html" width=75px height=70px frameborder="0" name="bot"></iframe> 
-      </div>
+        <!--index_section_menu를 사진 밑에 배치해야함/나리-->
+        <iframe src="index_section_menu.html" width=105px height=70px frameborder="0" name="bot"></iframe> 
     </section>
 
     <footer>
