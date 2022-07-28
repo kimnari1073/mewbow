@@ -10,7 +10,7 @@
         
         body{
             width: 1440px;
-            height: 1000px;
+            height: 3300px;
             border: 1px dashed;
             margin: auto;
         }
@@ -55,15 +55,23 @@
             color:gray;
             font-size: 15px;
         }
-       
+        /*텍스트 가운데 정렬*/
+        .center{
+            text-align: center;
+        }
+       /*텍스트 색깔*/
+       .gray{
+        color: gray;
+       }
     </style>
 </head>
 <body>
     <header>
         <span class="main_logo"><a href="index.html">IT의 기원과 세대</a></span>
-        <span class="navi"><a href="origin.html" >기원</a> / 
+        <span class="navi"><a href="origin.html" class="gradation">기원</a> / 
         <a href="generation.html">세대</a></span>
     </header>
+    <br><br><br><br>
     <section>
         <h1>1세대</h1>
         <!--1세대 요약-->
@@ -86,7 +94,70 @@
                 </tr>
             </table>
         </div>
+        <br><br><br><br><br><br>
+        <div class="center">
+        <h1>2세대</h1>
         <br>
+        <!--2세대 요약-->
+        <div class="gray"> 트랜지스터 사용으로 컴픁의 크기는 1/100로 작아지고 성능 우수, 가격이 저렴해졌다.
+            주기억장치는 자기코어, 보조기억장치는 자기 디스크, 운영 체재에 사용하였다. <br>
+            고급 프로그래밍 언어를 개발하고 이용함으로 본격적인 소프트웨어가 발전하였다.
+        </div>
+        <br>
+        <div class="center">
+            <img  src="img/trangister.JPG">
+            <figcaption>1947년 트랜지스터 </figcaption>
+            <br>
+            <img  src="img/2th_computer.JPG">
+            <figcaption>2세대 컴퓨터</figcaption>
+            <br>
+            <span class="gray"> 1947년 개발된 트랜지스터는 진공관을 대체했고 1958년부터 컴퓨터에도 접목하기 시작했다.<br>
+            2세대 컴퓨터 운영제체와 고급프로그래밍 언어 등장하였다.<br>
+            제2세대 컴퓨터 시기에 하드웨어를 제어하는 운영체제가 처음으로 도입되었다.<br>
+            실질적인 작업을 위해 쓰인 최초의 운영체제는 1956년, IBM 704를 위해 개발된 GM-NAA I/O로 실행 중인 프로그램이 완료되면 자동으로 새 프로그램을 실행하는 기능을 수행했다. 
+            <br>사람들이 사용하는 언어와 비슷한 포르란과 코볼이라는 고급 수준의 프로그래밍 언어도 개발되어 이용되었다.<br> 
+            1957년 개발된 최초의 프로그래밍 언어인 포트란은 과학기술 분야에 적합하며 1959년 설계된 코볼은 사무처리용으로 개발된 프로그래밍언어이다. </span>
+        </div>
+        </div>
+        <br><br><br><br><br><br>
+        <div class="center">
+            <h1>3세대</h1>
+            <!--3세대 요약-->
+            <br>
+            <div class="summer"> 1964년 4월에 트랜지스터들을 포함한 '직접 회로'를 기억 장치 소자로 사용한 IBM사의 System 360기기부터 제 3세대 컴퓨터라 부르게 됩니다.
+            </div>
+            <br>
+            <div>
+                <img src="img/3th_computer.JPG">
+                <figcaption>세대 컴퓨터 기억 장치와 컴퓨터 시스템</figcaption>
+            </div>
+            <br>
+            <div class="gray">
+                기억 장치에 직접회로를 사용함으로써 컴퓨터는 소형화가 되었고, 반면 기억 용량은 커졌으며, 주기억 장치는 직접회로와 RAM, ROM을 사용되었습니다. <br> 프로그램 언어는 LIPS, PASCAL, BASIC, PL/1이 사용되었으며, 다중 프로그래밍, 실시간 처리 시스템, 시분할 시트렌 등의 운영 시스템이 도입되었습니다.
+                <br>이러한 기능들은 인간과 기기간의 대화를 가능하게 하여 영상 표시 장치(CRT) 등 단말기에 의한 자료 처리가 보편화 되었습니다.<br>
+                대표적으로는 IBM S/360 계열, 유니박 1108, CDC 6000 계열, Burroughs 5500, Honeywell 200 계열 등이 있습니다.
+            </div>
+        </div>
+        <br><br><br><br><br><br>
+        <h1>4세대</h1>
+        <!--4세대 요약-->
+        <div class="summer">제4세대 컴퓨터의 중요한 특징은 하나의 칩에 수천 또는 수백만 개의 전자회로 소자를 집적시킨 <br>고밀도 집적회로(LSI : Large Scale Integration)와 초고밀도 집적회로(VLSI : Very Large Scale Integration)를 사용했다는 점이다.
+        </div>
+        <div>
+            <table>
+                <tr>
+                    <td><img class="first_generation_img" src="img/4th_1.jpg"></td>
+                    <td><img class="first_generation_img" src="img/4th_2.jpg"></td>
+                    <td><img class="first_generation_img" src="img/4th_3.jpg"></td>
+                </tr>
+                <tr>
+                    <td>1971년: 인텔 4004 <br>개발- 최초의 마이크로프로세서<br><span class="first_generation_text"> 고밀도 집적회로와 초고밀도 집적회로 기술로 인해 하나의 칩으로 된 중앙처리장치인 마이크로프로세서(microprocessor)가 개발되었다. 이 마이크로프로세서의 개발은 개인용 컴퓨터를 대량으로 생산할 수 있는 획기적인 계기가 되었다. 최초의 마이크로프로세서는 1971년에 개발된 인텔(Intel) 4004다.
+                    </span></td>
+                    <td>1975년: 알테어 8800 <br>개발- 최초의 개인용 컴퓨터<br><span class="first_generation_text">최초의 개인용 컴퓨터는 1975년 MITS사 대표인 로버츠(Ed Roberts)가 개발한 알테어(Altair) 8800이다.</span></td>
+                    <td>1984년: 매킨토시 <br> 애플사 개인용 컴퓨터<br><span class="first_generation_text">애플사는 1984년에 매킨토시(Macintosh)를 시판하기 시작한다. 매킨토시 운영체제는 텍스트 명령어를 사용하는 IBM PC의 MS-DOS와 달리 마우스와 그래픽을 이용하는 사용자 환경을 제공하였다. 이로 인해 출시 1년만에 30만 고객을 확보하게 된다.</span></td>
+                </tr>
+            </table>
+        </div>
     </section>
 </body>
 </html>
