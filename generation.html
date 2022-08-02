@@ -63,6 +63,28 @@
        .gray{
         color: gray;
        }
+       /*nav*/
+       .nav ul{
+        width: 100px;
+        position:fixed;
+        right: 50px;
+        text-align: center;
+       }
+       .nav li a{
+        display: block;
+        background-color: rgb(255, 255, 255);
+        color: rgb(153, 150, 150);
+        border: dashed 1px gray;
+        font-size: 25px;
+        opacity: 0.8;
+        border-radius:10% 30% 50% 70%;
+        margin-top: 5px;
+
+       }
+       .nav li a:hover{
+        background-color:rgb(153, 150, 150);
+        color:rgb(252, 252, 252);
+       }
     </style>
 </head>
 <body>
@@ -71,9 +93,17 @@
         <span class="navi"><a href="origin.html" class="gradation">기원</a> / 
         <a href="generation.html">세대</a></span>
     </header>
-    <br><br><br><br>
+    <br>
+    <nav class="nav">
+        <ul>
+            <li><a href="#first">1세대</a></li>
+            <li><a href="#second">2세대</a></li>
+            <li><a href="#third">3세대</a></li>
+            <li><a href="#fourth">4세대</a></li>
+        </ul>
+    </nav><br>
     <section>
-        <h1>1세대</h1>
+        <h1 id="first">1세대</h1>
         <!--1세대 요약-->
         <div class="summer">정보를 저장하기 위한 회로 소자로 진공관을 사용했다는 점이 가장 큰 특징이다. 
             <br>주기억장치는 자기 드럼을 사용했고, 프로그램은 기계어로 작성하였다.
@@ -96,7 +126,7 @@
         </div>
         <br><br><br><br><br><br>
         <div class="center">
-        <h1>2세대</h1>
+        <h1 id="second">2세대</h1>
         <br>
         <!--2세대 요약-->
         <div class="gray"> 트랜지스터 사용으로 컴픁의 크기는 1/100로 작아지고 성능 우수, 가격이 저렴해졌다.
@@ -121,7 +151,7 @@
         </div>
         <br><br><br><br><br><br>
         <div class="center">
-            <h1>3세대</h1>
+            <h1 id="third">3세대</h1>
             <!--3세대 요약-->
             <br>
             <div class="summer"> 1964년 4월에 트랜지스터들을 포함한 '직접 회로'를 기억 장치 소자로 사용한 IBM사의 System 360기기부터 제 3세대 컴퓨터라 부르게 됩니다.
@@ -139,7 +169,7 @@
             </div>
         </div>
         <br><br><br><br><br><br>
-        <h1>4세대</h1>
+        <h1 id="fourth">4세대</h1>
         <!--4세대 요약-->
         <div class="summer">제4세대 컴퓨터의 중요한 특징은 하나의 칩에 수천 또는 수백만 개의 전자회로 소자를 집적시킨 <br>고밀도 집적회로(LSI : Large Scale Integration)와 초고밀도 집적회로(VLSI : Very Large Scale Integration)를 사용했다는 점이다.
         </div>
