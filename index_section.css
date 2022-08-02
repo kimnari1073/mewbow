@@ -6,22 +6,25 @@
     top: 100px;
     left: 100px;
     border:1px solid; 
+    letter-spacing: 1.5px; /*자간*/
+    padding: 10px;
 }
-.section_img{
+img{
+    width: 445px; 
+    height: 450px;
+}
+.a{
     position: relative;
     top: 100px; 
-    margin-left: 150px; 
-    width: 445px; 
-    height: 430px;
-}
-/*사진 확대가 제자리에서 안됨_신영*/
-.a{
+    left: 130px;
+    height:450px;
+    width: 445px;
     overflow: hidden;
-    height:580px;
+    border: 1px solid;
 }
 .a img{
-    transition: all 0.2s linear;
+    transition: all 0.05s linear;
 }
 .a:hover img{
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
