@@ -8,6 +8,7 @@
     border:1px solid; 
     letter-spacing: 1.5px; /*자간*/
     padding: 10px;
+    
 }
 img{
     width: 445px; 
@@ -21,6 +22,7 @@ img{
     width: 445px;
     overflow: hidden;
     border: 1px solid;
+    
 }
 .a img{
     transition: all 0.05s linear;

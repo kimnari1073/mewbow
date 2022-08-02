@@ -2,12 +2,13 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-sclae="1.0">
     <title>컴퓨터역사</title>
     <link rel="stylesheet" href="main.css" type="text/css">
     <style>
         body{
             width: 1440px;
-            height: 2000px;
+            height: 4000px;
             border: 1px dashed;
             margin: auto;
         }
@@ -21,14 +22,24 @@
         margin-left: 250px;
         }
         table, td{
-            border: dashed 1px  gray; /*알아보기 위해 임시적으로 선 만듬*/
+            border: solid 1px rgb(215, 213, 213); /*알아보기 위해 임시적으로 선 만듬 -> 선 있는게 나음*/
             border-collapse: collapse;/*테두리 한줄 만들기*/
             width: 1400px;
-            margin-left: auto;
-            margin-right: auto;
+          
             text-align: center;
             padding-bottom: 40px;
             padding-top: 40px;
+            color: gray;
+
+         }
+         /*글씨*/
+         .origin_text{
+            font-size: 22px;
+            color: #464646;
+            padding: 20px;
+            text-align: left;
+            letter-spacing: 1.5px;
+
          }
          /*이미지 확대 효과*/
         .a{
@@ -36,7 +47,8 @@
             height:450px;
             width: 445px;
             overflow: hidden;
-            border: 1px solid;
+            border: 0px solid;
+            
          }
         .a img{
             transition: all 0.05s linear;
@@ -44,6 +56,8 @@
         .a:hover img{
            transform: scale(1.1);
          }
+         
+         
     </style>
 </head>
 <body>
@@ -56,49 +70,49 @@
     <section>
         <table>
             <tr class="a">
-                <td><img src="img/origin_1.jpg" height="500px"></td>
-                <td>컴퓨터의 어원은 '계산하다'라는 
+                <td><img src="img/origin_1.jpg" height="500px" width="700px"><figcaption>▲ 기원 전 주판</figcaption></td>
+                <td class="origin_text">컴퓨터의 어원은 '계산하다'라는 
                     뜻인 만큼 초창기 컴퓨터의 발전은
-                    계산기로부터 출발했다.
+                    계산기로부터 출발했다.<br><br>
                     기원 전 사용하던 주판의 형태는
                     한나라 때 만들어진 현대의 주판 형태로
-                    계속 사용되어 왔다</td>
+                    계속 사용되어 왔다.</td>
             </tr>
         </table>
         <table>
             <tr class="a">
-                <td>그러다 1642년, 
+                <td class="origin_text">그러다 1642년, 
                     아버지의 수고를 덜어주기 위해
                     파스칼은 톱니를 사용해 셈을 하도록 고안된
                     형태인 기계식 계산기를 발명했다.</td>
-                <td><img src="img/origin_2.jpg" height="500px"></td>
+                <td><img src="img/origin_2.jpg" height="500px" width="700px"><figcaption>▲ 1642년 파스칼 계산기</figcaption></td>
             </tr>
         </table>
         <table>
             <tr class="a">
-                <td><img src="img/origin_3.jpg" height="500px"></td>
-                <td>이후 라이프니츠는 곱셈과 나눗셈이 가능
-                    하도록 계산기를 만들었고(1671년),  
-                    찰스 배비지는 종이에 구멍을 뚫어 프
-                    로그래밍하는, 오늘날의 컴퓨터와 가장
+                <td><img src="img/origin_3.jpg" height="500px" width="700px"><figcaption>▲ 1671년 라이프니츠 계산기</figcaption></td>
+                <td class="origin_text">이후 1671년, 라이프니츠는 곱셈과 나눗셈이 가능
+                    하도록 계산기를 만들었다.<br>
+                    찰스 배비지는 종이에 구멍을 뚫어 
+                    프로그래밍하는, 오늘날의 컴퓨터와 가장
                     유사한 장치를 고안했으나 기술적 한계로 실물이 등장하지는 못했다.</td>
             </tr>
         </table>
         <table>
             <tr class="a">
-                <td>전자식 컴퓨터는 전쟁 중에 발명되었습니다.
+                <td class="origin_text">전자식 컴퓨터는 전쟁 중에 발명되었다.<br>
                     세계 제2차 대전 당시
                     독일군의 군사 암호를 해독하기 위해
                     만들어진 콜로서스 1호는
                     세계 최초의 프로그래밍 가능한
                     완전 전자식 컴퓨터였다.</td>
-                <td><img src="img/origin_3_2.jpg" height="500px"></td>
+                <td><img src="img/origin_3_2.jpg" height="500px" width="700px"><figcaption>▲ 암호해독기 콜로서스</figcaption></td>
             </tr>
         </table>
         <table>
             <tr class="a">
-                <td><img src="img/origin_4.jpg" height="500px"></td>
-                <td>1944년 미국에서도
+                <td><img src="img/origin_4.jpg" height="500px" width="700px"><figcaption>▲ 전자식 컴퓨터 마크 1</figcaption></td>
+                <td class="origin_text">1944년 미국에서도
                     전자식 컴퓨터 마크1을 만들었는데
                     기계적 제약 때문에 계산 속도는 그리
                     빠르지 않았다.</td>
@@ -106,12 +120,12 @@
         </table>
         <table>
             <tr class="a">
-                <td>여기까지의 컴퓨터는
+                <td class="origin_text">여기까지의 컴퓨터는
                     계산이나 암호 해독 등의 목적을 가진,
                     빠른 계산기에 해당한다고 하면 앞으로는
                     다용도로 사용 가능한 컴퓨터가
                     등장하게 된다.</td>
-                <td><img src="img/origin_5.jpg" height="500px"></td>
+                <td><img src="img/origin_5.jpg" height="500px" width="700px"></td>
             </tr>
         </table>
     </section>
