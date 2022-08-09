@@ -19,29 +19,100 @@
             margin-left: 850px;
             margin-top: -60px;
         }
+        /*슬라이드효과*/
+        .section input[id="slide"]{
+            display: none;
+        }
+        .section .slidewrap{
+            max-width: 1500px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        .section .slidelist {
+            white-space: nowrap;
+            font-size: 0;
+        }
+        .section .slidelist >li{
+            display: inline-block;
+            vertical-align: middle;
+            width: 100%;
+            transition: all .8s;
+        }
+        .section .slidelist >li >a{
+            display: block;
+            position: relative;
+        }
+        .section .slidelist>li>a iframe {
+            width: 100%;
+        }
+        .section .slidelist label { /*왼쪽라벨은 잘 되는데 오른쪽이 안눌림..사진 때문인가...?_신영*/
+            position: absolute;
+            z-index: 10;
+            top: 50%;
+            transform: translateY(-50%);
+            padding: 50px;
+            cursor: pointer;
+        }
+        .section .slidelist.left{
+            left: 30px;
+            background: url('img/left.png') center center/100% no-repeat;/*이미지가 안나옴_신영*/
+        }
+        .section .slidelist.right{
+            right: 30px;
+            background: url('img/right.png') center center/100% no-repeat;
+        }
+        .section [id="slide01"]:checked ~ .slidewrap .slidelist >li {transform: translateX(0%);}
+        .section [id="slide02"]:checked ~ .slidewrap .slidelist >li {transform: translateX(-100%);}
+        .section [id="slide03"]:checked ~ .slidewrap .slidelist >li {transform: translateX(-200%);}
     </style>
-    
 </head>
 <body>
     <header> <!--header부분 수정 필요함. 메인로고는 왼쪽, 네비는 오른쪽에 배치되게끔 하기/나리-->
         <span class="main_logo"><a href="index.html">IT의 기원과 세대</a></span>
-        <span class="navi"><a href="origin.html" >기원</a> /
-        <a href="generation.html">세대</a></span>
     </header>
     <br>
-    <nav>
-        <ul class="nav_ul">
- 
+    <nav class="main_nav">
+        <span><a href="origin.html" class="navi">기원</a></span><span class="navi_1">/</span>
+        <span><a href="generation.html" class="navi">세대</a></span>
     </nav>
-
+<!--혹시 몰라서 나둠_신영
     <section>
         <iframe src="index_section01.html" name="top" width=100% height=600px frameborder="0"></iframe>
-        <!--index_section_menu를 사진 밑에 배치해야함/나리-->
       <div class="box">
         <iframe src="index_section_menu.html" width=105px height=70px frameborder="0" name="bot"></iframe> 
       </div> 
     </section>
-
+-->
+    <div class="section">
+        <input type="radio" name="slide" id="slide01" checked>
+        <input type="radio" name="slide" id="slide02">
+        <input type="radio" name="slide" id="slide03">
+        <div class="slidewrap">
+            <ul class="slidelist">
+                <li>
+                    <a>
+                        <label for="slide03" class="left"></label>
+                        <iframe src="index_section01.html" name="top" width=100% height=600px frameborder="0"></iframe>
+                        <label for="slide02" class="right"></label>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <label for="slide01" class="left"></label>
+                        <iframe src="index_section02.html" name="top" width=100% height=600px frameborder="0"></iframe>
+                        <label for="slide03" class="right"></label>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <label for="slide02" class="left"></label>
+                        <iframe src="index_section03.html" name="top" width=100% height=600px frameborder="0"></iframe>
+                        <label for="slide01" class="right"></label>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
     <footer>
         Footer
     </footer>

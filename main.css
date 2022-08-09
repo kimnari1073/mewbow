@@ -16,24 +16,31 @@ header{
     font-weight: bold;
 }
 .main_logo{
-    margin-right: 400px;
+    position: absolute;
+    margin-left: -550px;
     font-size: 60px;
+}
+/*nav*/
+.main_nav{
+    margin-left: 900px;
+    word-spacing:70px;
 }
 .navi{
     font-size: 35px;
-    word-spacing: 100px;
+    font-weight: bold;
 }
-/*section*/
-
-
-
-/*nav*/
+.navi:hover{
+    font-size: 32px;
+    color: gray;
+}
+.navi_1{
+    font-size: 35px;
+    margin-left:50px;
+}
 nav ul li{
     border: 0px solid rgb(0, 0, 0);
     list-style: none;
     font-size: 30px;
-    
-   
 }
 /*nav 글씨전용*/
 nav ul li span{
