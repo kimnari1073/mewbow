@@ -41,11 +41,14 @@
             letter-spacing: 1.5px;
 
          }
-
+         
+         /*타임라인*/
          .timeline {
             white-space: nowrap;
             overflow-x: hidden;
             margin-left: 100px;
+            margin-bottom: -60px;
+            margin-top: -100px;
          }
         
          .timeline ol {
@@ -65,9 +68,10 @@
 
          /*마지막 타임라인 선길이*/ 
          .timeline ol li:last-child {
-            width: 280px;
+            width: 230px;
          }
-         /*첫번째 타임라인 선길이*/  
+        
+         /*타임라인 선길이*/  
          .timeline ol li:not(:first-child) {
          margin-left: 14px;
          }
@@ -125,9 +129,17 @@
          border-width: 8px 0 0 8px;
          border-color: transparent  white;
          }
-         .timeline ol li div :hover{
+         /*타임라인 hover <time> 태그 넣음 됨*/
+         .timeline ol li div time:hover{
           background-color: #464646;
           color: #ffffff;
+         }
+         .timeline_font{
+          color: #464646;
+          background-color: #ffffff;
+          font-size: 19px;
+          font-weight: bold;
+          
          }
     </style>
 </head>
@@ -142,39 +154,39 @@
 
     <section class="timeline">
         <ol>
+          <li><a href="#"> <!--나리언니가 말한 말풍선 누르면 ifame 구현 실패/ generation 리모콘 기능 처럼 말풍선 누르면 그 위치로 이동하는 것 어떨까 싶음 -->
+            <div>
+              <id class="timeline_font">B.C 2400</id> <p></p>
+              <time> 바빌로니아 </time> 주판 사용. 컴퓨터 발전의 시작.
+            </div></a>
+          </li>
           <li>
             <div>
-              <time>B.C 2400</time>
-              바빌로니아 주판 사용. 컴퓨터 발전의 시작
+              <id class="timeline_font">1642</id> <p></p>
+              파스칼의 기계식 계산기.<p></p>
+              톱니바퀴를 이용해 덧셈과 뺄셈 계산.
             </div>
           </li>
           <li>
             <div>
-              <time>1946</time>
-              파스칼의 기계식 계산기.
-              톱니바퀴를 이용 덧셈과 뺄셈 계산
+              <id class="timeline_font">1671</id> <p></p>
+              라이프니츠 계산기. 
+              파스칼의 계산기를 계량해 곱셈과 나눗셈 계산.
             </div>
           </li>
           <li>
             <div>
-              <time>1673</time>
-              라이프니츠 계산기 
-              파스칼의 계산기를 계량해 곱셈과 나눗셈 계산
+              <id class="timeline_font">1939</id> <p></p>
+              암호해독기 콜로서스. <p></p>
+              앨런 튜링의 제안에 따라 진공관을 이용해 암호를 해독.
+              최초의 연산 컴퓨터.
             </div>
           </li>
           <li>
             <div>
-              <time>1939</time>
-              암호해독기 콜로서스
-              앨런튜링의 제안에 따라 만들어진 진공관을 이용한 암호 해독기.
-              최초의 연산 컴퓨터
-            </div>
-          </li>
-          <li>
-            <div>
-              <time>1944</time>
-              전자식 컴퓨터 마크 1
-              대학 교수 에이큰과 IBM 사가 공동으로 제작한 세계 최초의 자동 계산기
+              <id class="timeline_font">1944</id> <p></p>
+              전자식 컴퓨터 마크 1. <p></p>
+              대학 교수 에이큰과 IBM 사가 공동으로 제작한 세계 최초의 자동 계산기.
             </div>
           </li>
           <li></li>
