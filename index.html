@@ -9,6 +9,10 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"/>
     <style>
+        header{
+            height: 50px;
+            margin-bottom: 100px;
+        }
         body{
             width: 1440px;
             border: 1px dashed;
@@ -20,101 +24,78 @@
             margin-top: -60px;
         }
         /*슬라이드효과*/
-        .section input[id="slide"]{
+        section input[id="slide"]{
             display: none;
         }
-        .section .slidewrap{
-            max-width: 1500px;
+        section .slidewrap{
+            max-width: 1450px;
             margin: 0 auto;
             overflow: hidden;
         }
-        .section .slidelist {
+        section .slidelist {
             white-space: nowrap;
             font-size: 0;
         }
-        .section .slidelist >li{
+        section .slidelist >li{
             display: inline-block;
-            vertical-align: middle;
             width: 100%;
             transition: all .8s;
         }
-        .section .slidelist >li >a{
-            display: block;
-            position: relative;
-        }
-        .section .slidelist>li>a iframe {
+        section .slidelist>li>iframe {
             width: 100%;
         }
-        .section .slidelist label { /*왼쪽라벨은 잘 되는데 오른쪽이 안눌림..사진 때문인가...?_신영*/
-            position: absolute;
-            z-index: 10;
-            top: 50%;
-            transform: translateY(-50%);
-            padding: 50px;
+        section .slidelist label {
+            height: 150px;
+            width: 50px;
             cursor: pointer;
         }
-        .section .slidelist.left{
-            left: 30px;
-            background: url('img/left.png') center center/100% no-repeat;/*이미지가 안나옴_신영*/
+        #left{
+            position: absolute;
+            top:200px;
         }
-        .section .slidelist.right{
-            right: 30px;
-            background: url('img/right.png') center center/100% no-repeat;
+        #right{
+            position: absolute;
+            top:200px;
+            right: 25px;
         }
-        .section [id="slide01"]:checked ~ .slidewrap .slidelist >li {transform: translateX(0%);}
-        .section [id="slide02"]:checked ~ .slidewrap .slidelist >li {transform: translateX(-100%);}
-        .section [id="slide03"]:checked ~ .slidewrap .slidelist >li {transform: translateX(-200%);}
+        section [id="slide01"]:checked ~ .slidewrap .slidelist >li {transform: translateX(0%);}
+        section [id="slide02"]:checked ~ .slidewrap .slidelist >li {transform: translateX(-100%);}
+        section [id="slide03"]:checked ~ .slidewrap .slidelist >li {transform: translateX(-200%);}
     </style>
 </head>
 <body>
-    <header> <!--header부분 수정 필요함. 메인로고는 왼쪽, 네비는 오른쪽에 배치되게끔 하기/나리-->
+    <header>
         <span class="main_logo"><a href="index.html">IT의 기원과 세대</a></span>
+        <nav class="main_nav">
+            <span><a href="origin.html" class="navi">기원</a></span><span class="navi_1">/</span>
+            <span><a href="generation.html" class="navi">세대</a></span>
+        </nav>
     </header>
-    <br>
-    <nav class="main_nav">
-        <span><a href="origin.html" class="navi">기원</a></span><span class="navi_1">/</span>
-        <span><a href="generation.html" class="navi">세대</a></span>
-    </nav>
-<!--혹시 몰라서 나둠_신영
+
+
     <section>
-        <iframe src="index_section01.html" name="top" width=100% height=600px frameborder="0"></iframe>
-      <div class="box">
-        <iframe src="index_section_menu.html" width=105px height=70px frameborder="0" name="bot"></iframe> 
-      </div> 
-    </section>
--->
-    <div class="section">
         <input type="radio" name="slide" id="slide01" checked>
         <input type="radio" name="slide" id="slide02">
         <input type="radio" name="slide" id="slide03">
         <div class="slidewrap">
             <ul class="slidelist">
                 <li>
-                    <a>
-                        <label for="slide03" class="left"></label>
-                        <iframe src="index_section01.html" name="top" width=100% height=600px frameborder="0"></iframe>
-                        <label for="slide02" class="right"></label>
-                    </a>
+                    <label for="slide03" id="left"><img src="/img/left.png" width="80px"></label>
+                    <iframe src="index_section01.html" name="top"height=600px frameborder="0"></iframe>
+                    <label for="slide02" id="right"><img src="/img/right.png" width="60px"></label>
                 </li>
                 <li>
-                    <a>
-                        <label for="slide01" class="left"></label>
-                        <iframe src="index_section02.html" name="top" width=100% height=600px frameborder="0"></iframe>
-                        <label for="slide03" class="right"></label>
-                    </a>
+                        <label for="slide01" id="left"><img src="/img/left.png" width="80px"></label>
+                        <iframe src="index_section02.html" name="top"height=600px frameborder="0"></iframe>
+                        <label for="slide03" id="right"><img src="/img/right.png" width="60px"></label>
                 </li>
                 <li>
-                    <a>
-                        <label for="slide02" class="left"></label>
-                        <iframe src="index_section03.html" name="top" width=100% height=600px frameborder="0"></iframe>
-                        <label for="slide01" class="right"></label>
-                    </a>
+                        <label for="slide02" id="left"><img src="/img/left.png" width="80px"></label>
+                        <iframe src="index_section03.html" name="top" height=600px frameborder="0"></iframe>
+                        <label for="slide01" id="right"><img src="/img/right.png" width="60px"></label>
                 </li>
             </ul>
         </div>
-    </div>
-    <footer>
-        Footer
-    </footer>
+    </section>
 </body>
 </html>

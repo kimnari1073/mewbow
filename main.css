@@ -26,12 +26,14 @@ header{
     word-spacing:70px;
 }
 .navi{
+    padding: 0px 15px 0px 15px;
+    border-radius: 10px;
     font-size: 35px;
     font-weight: bold;
 }
 .navi:hover{
-    font-size: 32px;
-    color: gray;
+
+    background-color: gray;
 }
 .navi_1{
     font-size: 35px;

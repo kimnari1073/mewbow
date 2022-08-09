@@ -1,9 +1,10 @@
+
 .section_text{
     width: 750px;
     height: 430px;
     float: left;
     position: relative;
-    top: 100px;
+    top: 30px;
     left: 100px;
     border:1px solid; 
     letter-spacing: 1.5px; /*자간*/
@@ -16,7 +17,7 @@ img{
 }
 .a{
     position: relative;
-    top: 100px; 
+    top: 30px; 
     left: 130px;
     height:450px;
     width: 445px;
@@ -28,5 +29,5 @@ img{
     transition: all 0.05s linear;
 }
 .a:hover img{
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
