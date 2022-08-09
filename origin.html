@@ -42,7 +42,7 @@
 
          }
          /*이미지 확대 효과*/
-        .a{
+       /* .a{
             position: relative;
             height:450px;
             width: 445px;
@@ -55,9 +55,92 @@
          }
         .a:hover img{
            transform: scale(1.1);
+         }*/
+
+         .timeline {
+            white-space: nowrap;
+            overflow-x: hidden;
          }
-         
-         
+        
+         .timeline ol {
+            width: 100vw;
+            padding: 250px 0;
+         }
+
+         /*타임라인 선*/
+         .timeline ol li {
+            position: relative;
+            display: inline-block;
+            list-style-type: none;
+            width: 160px;
+            height: 3px;
+            background: #fff;
+         }
+
+         /*마지막 타임라인 선길이*/ 
+         .timeline ol li:last-child {
+            width: 280px;
+         }
+         /*첫번째 타임라인 선길이*/  
+         .timeline ol li:not(:first-child) {
+         margin-left: 14px;
+         }
+        
+         /*타임라인 동그라미*/
+         .timeline ol li:not(:last-child)::after {
+         content: '';
+         position: absolute;
+         left: calc(100% + 1px);
+         bottom: 0;
+         width: 12px;
+         height: 12px;
+         margin-bottom: -5px;
+         border-radius: 50%;
+         background: #464646;
+         }
+
+         /*공통 설명 박스*/
+         .timeline ol li div {
+         position: absolute;
+         left: calc(100% + 7px);
+         width: 280px;
+         padding: 15px;
+         white-space: normal;
+         color: black;
+         background: white;
+         }
+        
+         .timeline ol li div::before {
+         content: '';
+         position: absolute;
+         /*top: 100%;*/
+         left: 0;
+         border-style: solid;
+         }  
+         /*위 설명박스(홀수)*/ 
+         .timeline ol li:nth-child(odd) div {
+         top: -16px;
+         transform: translateY(-100%);
+         }
+        
+         .timeline ol li:nth-child(odd) div::before {
+         top: 100%;
+         border-width: 8px 8px 0 0;
+         border-color: white transparent;
+         }
+
+         /*아래 설명박스 (짝수)*/
+         .timeline ol li:nth-child(even) div {
+         top: calc(100% + 16px);
+         }
+        
+         .timeline ol li:nth-child(even) div::before {
+         top: -8px;
+         border-width: 8px 0 0 8px;
+         border-color: transparent  white;
+         }
+                
+                
     </style>
 </head>
 <body>
@@ -68,6 +151,50 @@
         <span><a href="generation.html" class="navi">세대</a></span>
     </nav>
     <br><br><br><br>
+
+    <section class="timeline">
+        <ol>
+          <li>
+            <div>
+              <time>B.C 2400</time>
+              바빌로니아 주판 사용
+
+            </div>
+          </li>
+          <li>
+            <div>
+              <time>1946</time>
+              파스칼의 기계식 계산기.
+              톱니바퀴를 이용 덧셈과 뺄셈 계산
+            </div>
+          </li>
+          <li>
+            <div>
+              <time>1673</time>
+              라이프니츠 계산기 
+              파스칼의 계산기를 계량해 곱셈과 나눗셈 계산
+            </div>
+          </li>
+          <li>
+            <div>
+              <time>1822</time>
+              찰스바베지의 차분기관.
+              증기도 작동하는 미분적분 계산기
+              오늘날의 컴퓨터의 모체
+            </div>
+          </li>
+
+          <li>
+            <div>
+              <time>1890</time>
+              홀러리스의 천공카드 시스템
+              정이카드에 구멍을 뚫어 자료를 입력하고 분류하는 장치
+            </div>
+          </li>
+          <li></li>
+        </ol>
+      </section>
+
     <section>
         <table>
             <tr class="a">
