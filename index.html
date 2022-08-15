@@ -62,7 +62,7 @@
         section [id="slide02"]:checked ~ .slidewrap .slidelist >li {transform: translateX(-100%);}
         section [id="slide03"]:checked ~ .slidewrap .slidelist >li {transform: translateX(-200%);}
         input[type=radio] {
-            accent-color: gray;
+            accent-color: gray;/*라디오 파란색->회색*/
         }
     </style>
 </head>
@@ -76,26 +76,26 @@
     </header>
 
 
-    <section>
+    <section><!--슬라이드효과: 라디오 선택자 3개를 만들고  선택되면 넘어가게 만듬-->
         <input type="radio" name="slide" id="slide01" checked>
         <input type="radio" name="slide" id="slide02">
         <input type="radio" name="slide" id="slide03">
         <div class="slidewrap">
             <ul class="slidelist">
                 <li>
-                    <label for="slide03" id="left"><img src="/img/left.png" width="80px"></label>
+                    <label for="slide03" id="left"><img src="img/left.png" width="80px"></label>
                     <iframe src="index_section01.html" name="top"height=600px frameborder="0"></iframe>
-                    <label for="slide02" id="right"><img src="/img/right.png" width="80px"></label>
+                    <label for="slide02" id="right"><img src="img/right.png" width="80px"></label>
                 </li>
                 <li>
-                        <label for="slide01" id="left"><img src="/img/left.png" width="80px"></label>
+                        <label for="slide01" id="left"><img src="img/left.png" width="80px"></label>
                         <iframe src="index_section02.html" name="top"height=600px frameborder="0"></iframe>
-                        <label for="slide03" id="right"><img src="/img/right.png" width="80px"></label>
+                        <label for="slide03" id="right"><img src="img/right.png" width="80px"></label>
                 </li>
                 <li>
-                        <label for="slide02" id="left"><img src="/img/left.png" width="80px"></label>
+                        <label for="slide02" id="left"><img src="img/left.png" width="80px"></label>
                         <iframe src="index_section03.html" name="top" height=600px frameborder="0"></iframe>
-                        <label for="slide01" id="right"><img src="/img/right.png" width="80px"></label>
+                        <label for="slide01" id="right"><img src="img/right.png" width="80px"></label>
                 </li>
             </ul>
         </div>
