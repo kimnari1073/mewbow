@@ -30,6 +30,8 @@
             padding: 40px;
             margin-left: 19px;
             color: gray;
+            letter-spacing: 2px;
+            line-height: 180%;
 
          }
          /*글씨*/
@@ -154,40 +156,40 @@
 
     <section class="timeline">
         <ol>
-          <li><a href="#"> <!--나리언니가 말한 말풍선 누르면 ifame 구현 실패/ generation 리모콘 기능 처럼 말풍선 누르면 그 위치로 이동하는 것 어떨까 싶음 -->
+          <li><a href="#first"> <!--나리언니가 말한 말풍선 누르면 ifame 구현 실패/ generation 리모콘 기능 처럼 말풍선 누르면 그 위치로 이동하는 것 어떨까 싶음 -->
             <div>
               <id class="timeline_font">B.C 2400</id> <p></p>
               <time> 바빌로니아 </time> 주판 사용. 컴퓨터 발전의 시작.
             </div></a>
           </li>
-          <li>
+          <li><a href="#second">
             <div>
               <id class="timeline_font">1642</id> <p></p>
-              파스칼의 기계식 계산기.<p></p>
+             <time>파스칼의 기계식 계산기.</time><p></p>
               톱니바퀴를 이용해 덧셈과 뺄셈 계산.
-            </div>
+            </div></a>
           </li>
           <li>
-            <div>
+            <div><a href="#third">
               <id class="timeline_font">1671</id> <p></p>
-              라이프니츠 계산기. 
+              <time>라이프니츠 계산기. </time>
               파스칼의 계산기를 계량해 곱셈과 나눗셈 계산.
-            </div>
+            </div></a>
           </li>
           <li>
-            <div>
+            <div><a href="#fourth">
               <id class="timeline_font">1939</id> <p></p>
-              암호해독기 콜로서스. <p></p>
+              <time>암호해독기 콜로서스.</time> <p></p>
               앨런 튜링의 제안에 따라 진공관을 이용해 암호를 해독.
               최초의 연산 컴퓨터.
-            </div>
+            </div></a>
           </li>
           <li>
-            <div>
+            <div><a href="#fifth">
               <id class="timeline_font">1944</id> <p></p>
-              전자식 컴퓨터 마크 1. <p></p>
+              <time>전자식 컴퓨터 마크 1.</time> <p></p>
               대학 교수 에이큰과 IBM 사가 공동으로 제작한 세계 최초의 자동 계산기.
-            </div>
+            </div></a>
           </li>
           <li></li>
           
@@ -195,7 +197,7 @@
       </section>
 
     <section>
-        <table>
+        <table id="first">
             <tr class="a">
                 <td><img src="img/origin_1.jpg" height="500px" width="700px"><figcaption>▲ 기원 전 주판</figcaption></td>
                 <td class="origin_text">컴퓨터의 어원은 '계산하다'라는 
@@ -206,7 +208,7 @@
                     계속 사용되어 왔다.</td>
             </tr>
         </table>
-        <table>
+        <table id="second">
             <tr class="a">
                 <td class="origin_text">그러다 1642년, 
                     아버지의 수고를 덜어주기 위해
@@ -215,7 +217,7 @@
                 <td><img src="img/origin_2.jpg" height="500px" width="700px"><figcaption>▲ 1642년 파스칼 계산기</figcaption></td>
             </tr>
         </table>
-        <table>
+        <table id="third">
             <tr class="a">
                 <td><img src="img/origin_3.jpg" height="500px" width="700px"><figcaption>▲ 1671년 라이프니츠 계산기</figcaption></td>
                 <td class="origin_text">이후 1671년, 라이프니츠는 곱셈과 나눗셈이 가능
@@ -225,7 +227,7 @@
                     유사한 장치를 고안했으나 기술적 한계로 실물이 등장하지는 못했다.</td>
             </tr>
         </table>
-        <table>
+        <table id="fourth">
             <tr class="a">
                 <td class="origin_text">전자식 컴퓨터는 전쟁 중에 발명되었다.<br>
                     세계 제2차 대전 당시
@@ -236,7 +238,7 @@
                 <td><img src="img/origin_3_2.jpg" height="500px" width="700px"><figcaption>▲ 암호해독기 콜로서스</figcaption></td>
             </tr>
         </table>
-        <table>
+        <table id="fifth">
             <tr class="a">
 
             </tr>
