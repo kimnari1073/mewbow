@@ -6,9 +6,10 @@
     position: relative;
     top: 30px;
     left: 100px;
-    border:1px solid; 
+    border:2px solid rgb(175, 174, 174); 
     letter-spacing: 1.5px; /*자간*/
     padding: 10px;
+    color: #464646;
     
 }
 img{

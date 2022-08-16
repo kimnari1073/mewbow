@@ -4,8 +4,8 @@
     margin: 0px;
     padding: 0px;
     text-decoration: none;
-    font-family: 'IBM Plex Sans KR'; /*폰트 일단 넣었는데 별로면 바꿉시더 --은영*/
-    background-color: #ebebeb; /*배경 넣어봤는데 별로면 바꿉시더 --은영*/
+    font-family: 'IBM Plex Sans KR'; 
+    background-color: #ebebeb; 
 }
 a{
     color: #383838;
@@ -17,7 +17,7 @@ header{
 }
 .main_logo{
     position: absolute;
-    margin-left: -550px;
+    margin-left: -670px;
     font-size: 60px;
 }
 /*nav*/

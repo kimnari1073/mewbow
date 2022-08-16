@@ -9,13 +9,15 @@
     <style>
         body{
             width: 1440px;
-            border: 1px dashed;
             margin: auto;
         }
         /*header*/
         header{
+        height: 100px;
         font-size: 50px;
         font-weight: bold;
+        border-bottom: dashed 1px rgb(199, 198, 198);
+        border-top: dashed 1px rgb(199, 198, 198);
         }
         .main_logo{
         margin-left: 50px;
@@ -30,6 +32,11 @@
         .title{
             margin-left: 50px;
         }
+        h1{
+            background-color: #bcbcbc;
+            width: 60px;
+            color: #383838;
+        }
         table, td{ 
             border:1px solid rgb(215, 213, 213); 
             border-collapse: collapse;/*테두리 한줄 만들기*/
@@ -41,6 +48,7 @@
         /*텍스트 가운데 정렬*/
         .center{
             text-align: center;
+            color: #4d4d4d;
         }
        /*텍스트 색깔*/
        .gray{
@@ -73,12 +81,12 @@
 <body>
     <header>
         <span class="main_logo"><a href="index.html">IT의 기원과 세대</a></span>
-    </header>
     <div class="main_nav">
         <span><a href="origin.html" class="navi">기원</a></span><span class="navi_1">/</span>
         <span><a href="generation.html" class="navi">세대</a></span>
     </div>
-    <br>
+    </header>
+    <br><br>
     <nav class="nav">
         <ul>
             <li><a href="#first">1세대</a></li>
@@ -91,7 +99,7 @@
     <section>
 <!--1세대-->
     <div class="title">
-        <h1 id="first">1세대</h1>
+        <h1 id="first">1세대</h1><br>
         <!--1세대 요약-->
         <div class="gray">정보를 저장하기 위한 회로 소자로 진공관을 사용했다는 점이 가장 큰 특징이다. 
             <br>주기억장치는 자기 드럼을 사용했고, 프로그램은 기계어로 작성하였다.
@@ -123,7 +131,7 @@
 
 <!--2세대-->
     <div class="title">
-        <h1 id="second">2세대</h1>
+        <h1 id="second">2세대</h1><br>
         <!--2세대 요약-->
         <div class="gray"> 트랜지스터 사용으로 컴퓨터의 크기는 1/100로 작아지고 성능 우수, 가격이 저렴해졌다.
             주기억장치는 자기코어, 보조기억장치는 자기 디스크, 운영 체재에 사용하였다. <br>
@@ -148,7 +156,7 @@
 
 <!--3세대-->
         <div class="title">
-            <h1 id="third">3세대</h1>
+            <h1 id="third">3세대</h1><br>
             <!--3세대 요약-->
             <div class="gray">1964년 4월에 트랜지스터들을 포함한 '직접 회로'를 기억 장치 소자로 사용한 IBM사의 System 360기기부터 제 3세대 컴퓨터라 부르게 됩니다.</div>
         </div><br><br>
@@ -165,7 +173,7 @@
         <br><br><br><br><br><br>
 <!--4세대-->
         <div class="title">
-            <h1 id="fourth">4세대</h1>
+            <h1 id="fourth">4세대</h1><br>
             <!--4세대 요약-->
             <div class="gray">제4세대 컴퓨터의 중요한 특징은 하나의 칩에 수천 또는 수백만 개의 전자회로 소자를 집적시킨 <br>고밀도 집적회로(LSI : Large Scale Integration)와 초고밀도 집적회로(VLSI : Very Large Scale Integration)를 사용했다는 점이다.</div>
         </div><br><br>
@@ -190,7 +198,7 @@
 
 <!--5세대-->
         <div class="title">
-            <h1 id="fifth">5세대</h1>
+            <h1 id="fifth">5세대</h1><br>
             <!--5세대 요약-->
             <div class="gray">5세대 컴퓨터란 미래의 컴퓨터를 말한다.<br>인간과 대화하고 자연 언어로 명령을 처리하며, 인간처럼 생각하고 창의적인 작업도 수행할 수 있을 것이라고 예측한다.
                 <br>이러한 차세대 컴퓨터를 만들기 위한 연구 분야로는 인공지능분야, 병렬처리분야, 전문가 시스템분야, 신경망분야 등이 있다.</div>
