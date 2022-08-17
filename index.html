@@ -20,10 +20,6 @@
             text-align: center;
             margin: auto;
         }
-        .main_nav{
-            margin-top: 20px;
-            padding-left: 190px;
-        }
         section{
             letter-spacing: 2px;
             line-height: 180%;
@@ -75,11 +71,12 @@
     <header>
         <span class="main_logo"><a href="index.html">IT의 기원과 세대</a></span>
         <nav class="main_nav">
-            <span><a href="origin.html" class="navi">기원</a></span><span class="navi_1">/</span>
-            <span><a href="generation.html" class="navi">세대</a></span>
+            <ul>
+                <a href="origin.html"><li>기원</li></a>
+                <a href="generation.html"><li>세대</li></a>
+            </ul>
         </nav>
     </header>
-
 
     <section><!--슬라이드효과: 라디오 선택자 3개를 만들고  선택되면 넘어가게 만듬-->
         <input type="radio" name="slide" id="slide01" checked>

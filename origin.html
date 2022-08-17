@@ -8,7 +8,7 @@
     <style>
         body{
             width: 1440px;
-            height: 3800px;
+            height: 1000px;
             border: 0px dashed;
             margin: auto;
         }
@@ -110,7 +110,6 @@
          .timeline ol li div::before {
          content: '';
          position: absolute;
-         /*top: 100%;*/
          left: 0;
          border-style: solid;
          }  
@@ -128,7 +127,8 @@
 
          /*아래 설명박스 (짝수)*/
          .timeline ol li:nth-child(even) div {
-         top: calc(100% + 16px);
+         top: -130px;
+         transform: translateY(100%);
          }
         
          .timeline ol li:nth-child(even) div::before {
@@ -172,110 +172,56 @@
             opadity: 1;
           }
          }
+         section iframe:hover{
+          border: 0.5px solid;
+         }
     </style>
 </head>
 <body>
-    <header>
-        <span class="main_logo"><a href="index.html">IT의 기원과 세대</a></span>
-    <nav class="main_nav"> <span><a href="origin.html" class="navi">기원</a></span><span class="navi_1">/</span>
-        <span><a href="generation.html" class="navi">세대</a></span>
+  <header>
+    <span class="main_logo"><a href="index.html">IT의 기원과 세대</a></span>
+    <nav class="main_nav">
+        <ul>
+            <a href="origin.html"><li>기원</li></a>
+            <a href="generation.html"><li>세대</li></a>
+        </ul>
     </nav>
-  </header>
-  <br><br><br><br><br>
+</header>
+    <br><br><br><br><br>
     <!--타임라인 박스-->
     <section class="timeline">
         <ol>
-          <li> <!--나리언니가 말한 말풍선 누르면 ifame 구현 실패/ generation 리모콘 기능 처럼 말풍선 누르면 그 위치로 이동하는 것 어떨까 싶음 -->
+          <li>
             <div id="animation_1th">
-              <id class="timeline_font">B.C 2400</id> <p></p>
-              <a href="#first"><time> 바빌로니아 </time></a> 주판 사용. 컴퓨터 발전의 시작.
+              <iframe src="origin_menu01.html" width="280px" height="100px" frameborder="0"></iframe>
             </div>
           </li>
           <li>
             <div id="animation_2th">
-              <id class="timeline_font">1642</id> <p></p>
-              <a href="#second"><time>파스칼의 기계식 계산기.</time></a><p></p>
-              톱니바퀴를 이용해 덧셈과 뺄셈 계산.
+              <iframe src="origin_menu02.html" width="280px" height="120px" frameborder="0"></iframe>
             </div>
           </li>
           <li>
             <div id="animation_3th">
-              <id class="timeline_font">1671</id> <p></p>
-              <a href="#third"><time>라이프니츠 계산기. </time></a>
-              파스칼의 계산기를 계량해 곱셈과 나눗셈 계산.
+              <iframe src="origin_menu03.html"  width="280px" height="120px" frameborder="0"></iframe>
             </div>
           </li>
           <li>
             <div id="animation_4th">
-              <id class="timeline_font">1939</id> <p></p>
-              <a href="#fourth"><time>암호해독기 콜로서스.</time></a> <p></p>
-              앨런 튜링의 제안에 따라 진공관을 이용해 암호를 해독.
-              최초의 연산 컴퓨터.
+              <iframe src="origin_menu04.html" width="282px" height="120px" frameborder="0"></iframe>
             </div>
           </li>
           <li>
             <div id="animation_5th">
-              <id class="timeline_font">1944</id> <p></p>
-              <a href="#fifth"><time>전자식 컴퓨터 마크 1.</time></a> <p></p>
-              대학 교수 에이큰과 IBM 사가 공동으로 제작한 세계 최초의 자동 계산기.
+              <iframe src="origin_menu05.html" width="280px" height="150px" frameborder="0"></iframe>
             </div>
           </li>
           <li></li>
         </ol>
       </section>
       <br><br><br>
-      <!--본 설명-->
     <section2>
-        <table id="first">
-            <tr class="a">
-                <td><img src="img/origin_1.jpg" height="500px" width="700px"><figcaption>▲ 기원 전 주판</figcaption></td>
-                <td class="origin_text">컴퓨터의 어원은 '계산하다'라는 
-                    뜻인 만큼 초창기 컴퓨터의 발전은
-                    계산기로부터 출발했다.<br><br>
-                    기원 전 사용하던 주판의 형태는
-                    한나라 때 만들어진 현대의 주판 형태로
-                    계속 사용되어 왔다.</td>
-            </tr>
-        </table>
-        <table id="second">
-            <tr class="a">
-                <td class="origin_text">그러다 1642년, 
-                    아버지의 수고를 덜어주기 위해
-                    파스칼은 톱니를 사용해 셈을 하도록 고안된
-                    형태인 기계식 계산기를 발명했다.</td>
-                <td><img src="img/origin_2.jpg" height="500px" width="700px"><figcaption>▲ 1642년 파스칼 계산기</figcaption></td>
-            </tr>
-        </table>
-        <table id="third">
-            <tr class="a">
-                <td><img src="img/origin_3.jpg" height="500px" width="700px"><figcaption>▲ 1671년 라이프니츠 계산기</figcaption></td>
-                <td class="origin_text">이후 1671년, 라이프니츠는 곱셈과 나눗셈이 가능
-                    하도록 계산기를 만들었다.<br>
-                    찰스 배비지는 종이에 구멍을 뚫어 
-                    프로그래밍하는, 오늘날의 컴퓨터와 가장
-                    유사한 장치를 고안했으나 기술적 한계로 실물이 등장하지는 못했다.</td>
-            </tr>
-        </table>
-        <table id="fourth">
-            <tr class="a">
-                <td class="origin_text">전자식 컴퓨터는 전쟁 중에 발명되었다.<br>
-                    세계 제2차 대전 당시
-                    독일군의 군사 암호를 해독하기 위해
-                    만들어진 콜로서스 1호는
-                    세계 최초의 프로그래밍 가능한
-                    완전 전자식 컴퓨터였다.</td>
-                <td><img src="img/origin_3_2.jpg" height="500px" width="700px"><figcaption>▲ 암호해독기 콜로서스</figcaption></td>
-            </tr>
-        </table>
-        <table id="fifth">
-            <tr class="a">
-              <td><img src="img/origin_4.jpg" height="500px" width="700px"><figcaption>▲ 전자식 컴퓨터 마크 1</figcaption></td>
-              <td class="origin_text">1944년 미국에서도
-                  전자식 컴퓨터 마크1을 만들었는데
-                  기계적 제약 때문에 계산 속도는 그리
-                  빠르지 않았다.</td>
-            </tr>
-        </table>
+        <iframe src="origin_section01.html" name="top" height=800px width="1440px" frameborder="0"></iframe>
     </section2>
 </body>
 </html>

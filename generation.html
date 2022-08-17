@@ -10,6 +10,7 @@
         body{
             width: 1440px;
             margin: auto;
+            
         }
         /*header*/
         header{
@@ -23,14 +24,14 @@
         margin-left: 50px;
         font-size: 60px;
         }
-        .main_nav{
-            margin-top: 20px;
-            margin-right: 0px;
-            padding-left: 190px;
-        }
         /*section*/
         .title{
             margin-left: 50px;
+            animation: fadein 2s;
+        }
+        @keyframes fadein{
+          from{opacity: 0;}
+          to{opacity: 1;}
         }
         h1{
             background-color: #bcbcbc;
@@ -60,6 +61,7 @@
         position:fixed;
         right: 50px;
         text-align: center;
+        list-style: none;
        }
        .nav li a{
         display: block;
@@ -81,13 +83,15 @@
 <body>
     <header>
         <span class="main_logo"><a href="index.html">IT의 기원과 세대</a></span>
-    <div class="main_nav">
-        <span><a href="origin.html" class="navi">기원</a></span><span class="navi_1">/</span>
-        <span><a href="generation.html" class="navi">세대</a></span>
-    </div>
+        <nav class="main_nav">
+            <ul>
+                <a href="origin.html"><li>기원</li></a>
+                <a href="generation.html"><li>세대</li></a>
+            </ul>
+        </nav>
     </header>
     <br><br>
-    <nav class="nav">
+    <aside class="nav">
         <ul>
             <li><a href="#first">1세대</a></li>
             <li><a href="#second">2세대</a></li>
@@ -95,7 +99,7 @@
             <li><a href="#fourth">4세대</a></li>
             <li><a href="#fifth">5세대</a></li>
         </ul>
-    </nav><br>
+    </aside><br>
     <section>
 <!--1세대-->
     <div class="title">
