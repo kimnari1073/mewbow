@@ -29,10 +29,24 @@
             margin-left: 50px;
             animation: fadein 2s;
         }
+        /*1세대 애니메이션*/
         @keyframes fadein{
           from{opacity: 0;}
           to{opacity: 1;}
         }
+        #fade-in{
+          animation: fadein 2s;
+         }
+         #animation_2th{
+          animation: fadein 3s;
+         }
+         #animation_3th{
+          animation: fadein 4s;
+         }
+         #animation_4th{
+          animation: fadein 5s;
+         }
+
         h1{
             background-color: #bcbcbc;
             width: 60px;
@@ -112,16 +126,16 @@
     <!--1세대 내용-->
         <table>
              <tr class="center">
-                <td><img src="img/eniac.gif" width="300" height="300"><figcaption>▲ ENIAC</figcaption></td>
-                <td><img src="img/edsac.jpg" width="300" height="300"><figcaption>▲ EDSAC</figcaption></td>
-                <td><img src="img/edvac.png" width="300" height="300"><figcaption>▲ EDVAC</figcaption></td>
-                <td><img src="img/univac.jpg" width="300" height="300"><figcaption>▲ UNIVAC</figcaption></td>
+                <div class="animation_1th"><td class="animation_1th"><img src="img/eniac.gif" width="300" height="300"><figcaption>▲ ENIAC</figcaption></td></div>
+                <div id="animation_2th"><td><img src="img/edsac.jpg" width="300" height="300"><figcaption>▲ EDSAC</figcaption></td></div>
+                <div id="animation_3th"><td><img src="img/edvac.png" width="300" height="300"><figcaption>▲ EDVAC</figcaption></td></div>
+                <div id="animation_4th"><td><img src="img/univac.jpg" width="300" height="300"><figcaption>▲ UNIVAC</figcaption></td></div>
             </tr>
             <tr class="center">
-                <td>1946년 <br>최초의 전자식 컴퓨터</td>
-                <td>1949년 <br>최초의 프로그램 내장 방식 컴퓨터</td>
-                <td>1950년 <br>이진수 사용 컴퓨터</td>
-                <td>1951년 <br>최초의 상업용 컴퓨터</td>
+                <div id="animation_1th"></div><td>1946년 <br>최초의 전자식 컴퓨터</td></div>
+                <div id="animation_1th"></div><td>1949년 <br>최초의 프로그램 내장 방식 컴퓨터</td>
+                <div id="animation_1th"></div><td>1950년 <br>이진수 사용 컴퓨터</td>
+                <div id="animation_1th"></div><td>1951년 <br>최초의 상업용 컴퓨터</td>
             </tr>
             <tr class="gray">
                 <td>세계 최초로 진공관이 사용된 다용도 전자식 컴퓨터인 에니악이 탄생했다.<br> 십진수를 사용하며, 1초에 5,000번의 가감 연산과 360번의 곱셈, 170번의 나눗셈을 수행할 수 있었다.</td>
